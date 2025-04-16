@@ -8,6 +8,6 @@ Feature: Create a new user post
     And request {"title":"Shubham's Post","body":"This is a sample post created by Shubham.","userId":101,"id":101}
     When method post
     Then status 201
-    And match response.title == 'Shubham's Post'
-    And match response.body == 'This is a sample post created by Shubham.'
+    And match response.title == "Shubham's Post"
+    And match response.body == "This is a sample post created by Shubham."
     And match response.userId == 101
